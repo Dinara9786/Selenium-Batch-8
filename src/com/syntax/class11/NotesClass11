@@ -1,0 +1,80 @@
+Class 11
+
+Actions class handles key and mouse actions.
+
+Upload documents
+In order to upload the file/documents we need to sendKeys(file path name).
+
+If you are unable to sendKeys() you can also upload file by using Robot class.
+
+Advanced Xpath:
+
+Advanced xpath is based on parent and child, sibling relationship:
+
+example: identifying the element by following sibling
+//label[@id = 'nav-search-label']/following-sibling::input
+
+example: identifying the element by preceding sibling
+//span[text() = "& Orders']/preceding-sibling::span
+
+identify elements by its parent
+    Example
+    //span[text() = '& Orders']/parent::a
+    Syntax:
+    //tagname[@attribute='attribute value']/parent::ParentTagName
+
+    java script executor is interface, it is mechanism
+
+    when we cannot use any other locator adn and any other actions like click() = >  we can
+    use java script executor
+
+    in testing we will not be using javascript often, this option serves only as back-up
+
+    JS Executor:
+
+    It is something that is present in our selenium tool and can be executed in different programming
+    languages (java, C#, python etc)
+
+    JavaScriptExecutor is an interface.
+
+    We should only be using JavaScriptExecutor   only when we are not able to perform some actions such as :
+    Click on elements
+    Scroll the page
+    Refresh the Page
+    highlight the element
+    scroll to a specific element
+
+    What is POM:
+
+    POM stands for Page Object Model
+    It is a design pattern which is mainly used to enhance test maintenance and reduce code duplication.
+    It is a structure, and increase test maintenance.
+
+    Base class = we include = > configs files, base base actions, first actions we perform.
+    Test classes = we will perform our actual actions which we have inside our webpages
+    Utility classes (utils) = we have common actions, we develop more common actions
+
+
+    HOMEWORK
+
+    uitestpractice.com
+
+    delete the last row (5 row)
+    naviate to AjaxCall = explicit wait and get it printed in consolt
+    move to user's application form and fill it in adn submit
+    then go to Controls we drag and drop, radio and boxes....
+    handle windows, click on handle windows
+    switch to Click here to witch on teh below button and get the title and in the console
+    upload the file = handle pop ups, get the text from pop as well
+    drag and drop
+    actions
+    click me
+
+    watch class 11 from 2.30
+    using action class using loops highlight the table. No jsExecutor to use in this task for tables
+    switch to alerts
+    select
+    dropdowns and select one or two
+    contries adn choose
+    and quit the browser
+

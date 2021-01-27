@@ -1,0 +1,60 @@
+Class 06, December 9, 2020
+
+RECAP
+RadioButtons
+Multiple Checkbox
+
+ALERTS
+
+Alert is a pop up message. Alert takes complete focus from the webpage we ar eworking.
+We cannot proceed further without handling an alert.
+
+3 types of Alerts:
+
+1. web based or html alerts - they are just a webelement on the page and we can inspect adn perform action =
+= we can close, we can send keys, etc
+2. Javascript alert/ or browser alerts = handle it by using switchTo() method
+3. Windows based alerts = we cannot handle with Selenium.
+Selenium can handle only webbased applications.
+Window -based, operating system => Selenium cannot handle.
+
+Types of JS Alerts:
+
+1. simple alert = click ok.
+2. Confirmation alert - either cancel or click ok.
+3. Prompt alert = enter text adn click ok.
+
+To handle JS alerts we only have 4 methods available:
+1. accept()
+2. dismiss()
+3. getText()
+4. sendKeyes()
+
+    For authentication alerts the syntax is the following:
+    public static String url = "http://test:test@abcdatabase.com/basicauth";
+                                        username:password@
+
+
+FRAMES
+Frame is a separate adn independent window in a webpage.
+Frames allow developers to present multiple views in one webpage.
+in DOM = Any frame starts with iframe tagname.
+
+We interact frames with 3 different ways:
+1. by index
+2. by name or ID
+3. by webelement
+
+In Alerts - switch manually and it switches back automatically
+
+In Frames - we need to switch manually and switch back manually again
+
+TASK:
+
+Navigate to http://syntaxtechs.com/selenium-practice/bootstrap-iframe.php
+verify the header text Syntax Technologies -......
+verify enroll today button is enabled
+
+HomeWork:
+Go to http://syntaxtechs.com/selenium-practice/javascript-alert-box-demo.php
+click on each button and handle the alert accordingly

@@ -1,0 +1,58 @@
+
+Class 07, December 16, 2020
+
+Handling multiple windows:
+
+In order to handle multiple windows we will be using:
+getWindowHandle()or tab
+getWindowHandles()
+
+WindowHandle:
+windowhandle is a unique ID the holds the address of the window
+It is a 40 alphanumeric characted ID
+
+When we handle windows we store them in Set.
+
+Why we use Thread.sleep () ==> we pausing the execution of the code
+We are trying ot synchronize to load page and to .....
+Java is multithreading language.
+
+Synchronization:
+It is a process of bringing the speed of two or more compnents at the same level
+in our case we are tyring to match our script adn page loadin gspeed
+
+Thread.sleep(2000) => static wait.unconditional wait
+
+Type sof Selenium Waits:
+
+Implicit
+Explicit
+Fluent
+
+Implicit wait tells yoru webdriver to wait for a certain aount to time before throwing an exception.
+Implicit wait is written only once and will be applied for the whole session/exectuion. We can say
+implicit wait is also a global wait.
+
+Implicit wait is usually set to 20 seconds.
+If your element is located in 3 seconds the rest time will be ignored and your script will move onto
+the next action.
+
+If the element is not found at the given time, only then it will through an exception. .
+
+HOMEWORK:
+
+and close all the tabs
+
+Go to https://demoqa.com/browser-windows
+click on New Tab and print the text from new tab in the console
+click on New Window and print the text from new window in the console
+click on New Window Message and print the text from new window in the console
+Verify the title is displayed
+Print out the title of the all pages
+
+HW
+navigate to http://www.uitestpractice.com/Students/Contact
+click on the link
+get text
+print out in the console
+

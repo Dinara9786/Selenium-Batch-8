@@ -1,0 +1,49 @@
+
+Selenium?
+It is automation tool, testing
+
+with Selenium we test Web Applications
+3 types of test.
+
+1. GUI = Graphical User Interface == Frontend testing
+        1. Manual testing
+        2. Automation testing
+2. API = Application Programming Interface = Middle....
+        1. Manual testing
+        2. Automation testing with Selenium
+3. Database = Backend testing
+        1. Manual testing
+        2. Automation testing with Selenium
+
+    --> Test on different browser = chrome, firefox etc?
+    --> Test on different platform = Windows, Linux, MacOS
+
+    JSON = get ata from server side adn transfer it to client side/webPage
+    JavaScript Object Notation = JSON
+
+    // What is a WebElement or PageObject
+            //links, text boxes, radio button, check boxes, drop down menus, images, buttons
+            // in Selenium is the most important issue to locate element. We need to provide addres of the element we
+            //work on, location of the webelement
+
+            // for Selenium to do actions on page elements we have to provide location of each web element
+
+            // How do we tell the location of page objects to Selenium? = > Locators in Selenium
+
+            // id, tagName, xpath, css, class, linkText, partialLinkText
+
+all elements start with tag and ends with tag adn start with html and closing with html.
+
+
+if locator is dynamic but some part is stable then we can use stable part.
+
+Locator
+Xpath -- > absolute (native)
+Xpath -- > relative
+//tagname[@attribute = 'attribute value']
+// tagname[text() = 'text']
+
+
+xml = extensible markup language = format for us to write our script or write our webapplication readable by
+human and machine.
+

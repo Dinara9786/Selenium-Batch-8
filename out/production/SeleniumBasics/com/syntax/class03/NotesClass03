@@ -1,0 +1,104 @@
+
+Class 03, December 1, 2020
+
+why do you think we need xpath and CSS? Reasons:
+
+1. Developrs may not provide all teh locators in the HTML
+2. By using xpath and CSS gives us the opportunity to identify elements with any given attribute in HTML.
+
+What is Xpath?
+Xpath is like a query laungage which helps us to identify elements on uniquely on the webpage
+it is a path to specific object.
+
+To open a selector box click ctrl+F
+
+2 Types of Xpath:
+
+1. Absolute xpath -- starts from the starting node in html
+                        it always starts with single forward slash (/)
+                        node is a connection between the line????????
+                        example: html/head/meta
+
+2. Relative xpath -- we can start locating an element with any node in html
+                        it starts with double forward slash (//)
+
+  Syntax for relating xpath:
+
+  //tagname[@attribute = 'attribute value']
+  //input [@id = 'twotabsearchtextbox']
+
+  Identifying element by xpath adn using text:
+
+  if identifying by textname then we do not need @
+  //tagname[text() = 'text value']
+
+   Syntax for Contains: will identify an element with a partial attribute value
+   //tagname[contains(@attribute, 'attribute value')]
+   example:
+   //input[contains(@placeholder, 'Phone')]
+
+    Syntax for startswith: will identify an element with starting partial value
+    //tagname[starts-with(@attribute, 'attribute value')]
+    Example:
+    //h2[starts-with(text(), 'Connect')]
+
+    IMPORTANT: not to use attribute values with NUMBERS, because may change later.
+
+    Ends-wth was used in xpath1.0, but we are using xpath 2.0 adn this method is disabled.
+
+    Absolute xpath is not preferrable because html may be changed by developers.
+
+    <li>    is    list in html
+    <ul>    is    unordred list
+    <ol>    is    ordered list
+    <div>   is    division
+    <img>   is    image
+    <p>     is    paragraph
+    <h>     is    header
+    <span>  is      placeholder?????
+
+    ADVANCED XPATH:
+    is based on parent and child, sibling relationships
+    note: indexing is not reliable.
+
+    Identifying elements by following sibling.
+    Syntax:
+    //tagName[@attribute='attribute value']/following-sibling::tagName
+    Example
+    //input[@id = 'calFromDate']/following-sibling::img
+
+    identify elements by preceeding sibling
+    example
+    //input[@id = 'calFromDate']/preceeding-sibling::img
+    example
+    //span[text() = '& Orders']/preceeding-sibling::span
+
+    identify elements by its parent
+    Example
+    //span[text() = '& Orders']/parent::a
+    Syntax:
+    //tagname[@attribute='attribute value']/parent::ParentTagName
+
+    Identify element by its ancestor
+    Syntax:
+    //tagname[@attribute='attribute value']/ancestor::AncestorTagName
+    Example:
+    //input[@id='email']/ancestor::form
+
+    Identify element by index
+    Syntax:
+    (//tagname[@attribute='attribute value'])[index] // we are taking the whole element in parenthesis in one container
+                                                        // and then go through indexing
+    Example:
+    (//img[@class = 'ui-datepicker-trigger'])[2]
+    or
+    (//img)[3]
+
+    HW:
+    Navigate to http://syntaxtechs.com/selenium-practice/index.php
+    Click on start practicing
+    click on simple form demo
+    enter any text on first text box
+    click on show message
+
+

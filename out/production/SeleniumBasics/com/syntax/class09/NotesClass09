@@ -1,0 +1,23 @@
+
+Selenium Class 09, December 29, 2020
+
+waits = 3 types of waits
+implicit = use only once, it is global wait, it apply for entire session before it throws NoSuchElementException.
+find element, find elements
+fluent = it is outdated. it is global wait. we can different conditions before we execute our script
+explicitwait = using specific case. it is used to tell driver ... wait ....
+difference implicit and explicit = global adn individual
+
+Tables divided into several pages, the navigation bar is called pagination.
+
+HW
+Go to http://18.232.148.34/humanresources/symfony/web/index.php/auth/login
+click on leave
+click on leave list
+choose from "From calendar"
+choose from "To calendar"
+click only on cancelled and rejected checkboxes
+uncheck Pending Approval
+select IT support from DD
+click search
+quit the browser

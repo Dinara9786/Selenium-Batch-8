@@ -1,0 +1,44 @@
+
+Class 10, December 20, 2020
+
+How to
+
+Screenshots:
+
+In testing it is very improtant to take screenshots for verification
+so that we can prove that our test case is covered certain functionality.
+
+In order to take a screenshot in Selenium we will be using TakesScreenshot interface.
+
+Calendar:
+
+How to handle calendar:
+
+1. We need to click on Calendar
+2. We need to locate the month and get text
+3. if the desired text is not visible -- > we click on Next
+4. as soon as the desired text is found -- > we need to grab all cells from the body
+5. loop through the cells
+6. once the cell value is matched with our condition -- > click on the matched value and break the loop.
+
+Why do we need screenshots for our testing?
+
+In testing it is very important to take screenshots in order to prove that our test case covered certain functionality.
+In selenium in order to take a screenshot we will be using TakesScreehshot interface.
+
+Actions class:
+
+Actions class is given by selenium to handle keyboard and mouse events such as:
+Move to an element
+Dragging and dropping
+double click
+right click
+
+HW
+Go to aa.com/homePage.do
+select depart date
+select return date
+select destination
+click on search
+quit the browser
+

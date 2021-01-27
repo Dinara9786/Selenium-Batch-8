@@ -1,0 +1,19 @@
+
+Selenium Review Class 03, January 7, 2020
+
+Agenda
+
+1. How to handle windoes in Selenium
+2. Handle webtables
+3. Handle calendars
+
+// What is an alert -> popu windows which attracts our attendtion to something important
+how to handle alerts = switch to(0 command
+accept, canel/deny, sendText, getText
+
+iFrame =  Frame == Frame or window inside another window
+how to handle iFrame = switchto()
+
+Window Handling
+
+

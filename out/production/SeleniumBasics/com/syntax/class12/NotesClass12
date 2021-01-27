@@ -1,0 +1,79 @@
+Class 12
+
+We should ony be usein gJavaScriptExecutor only wen we are not able to perfrom some actions such as:
+click on elements
+scroll the page
+refresh teh page
+highlight the element
+scroll to a specific element
+
+WHAT IS POM:
+
+TestClasses
+actual test is going on
+
+Pages
+elements to corresonping page
+
+Base class
+setUP
+teaDown
+
+Utils
+CommonMethods
+ConfigsReaders
+
+Page Object Model = pattern, it helps us reduce code adn maintain and organize everything = actions, code etc.
+POM - Page Object Model = is a design pattern, and used for enhancing test maintenance and reducing code duplication.
+Also helps us organize our project.
+
+How to implement:
+2 ways:
+
+1. POM without page factory
+2. POM with page factory using @FindBy
+
+PageFactory is a class which gives us an opportunity to interact with our stored elements inside each page class.
+
+Purpose of the BASE CLASS = is open and close the browser
+Constructor cannot be overriden.
+
+BaseClass is fundamental.
+
+/**
+* => javadoc =
+
+HW: TestNG and use assertions
+TC 1: HRMS blank password validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Enter valid username and leave password field empty
+Click on login button
+Verify error message with text "Password cannot be empty" is displayed
+TC 2: HRMS blank username and password validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Leave username and password field empty
+Click on login button
+Verify error message with text "Username cannot be empty" is displayed
+TC 2: HRMS invalid credentials validation
+Navigate to "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login"
+Enter valid username and wrong password
+Click on login button
+Verify error message with text "Invalid credentials" is displayed
+TC:4 --> do on selenium project
+Go to http://www.uitestpractice.com/
+interact with drag and drop, iframe, double click
+click on home
+delete one user from the table
+go to the next link
+click on the ajax link and wait for the text
+verify that the text is displayed
+go to Form
+and fill out everything
+go to widgets
+upload any file and verify it is uploaded
+go to actions and perform all the necessary actions
+go to SwitchTo
+work with alerts and frames
+go to select
+perform actions on all dropdowns
+

@@ -1,0 +1,90 @@
+RECAP
+why we need locator:
+
+helps us identify the elements
+identify element with any given attribute
+developers may not provide wiht all the locators in the html
+
+ABSOLETE is not reliable because it may change after website updates
+
+ we control the drivers like chrome, fairfax etc
+ developers do not control drivers
+
+ advance xpath is it is relationship between parent, child and siblings
+
+ parent is
+ ancestor is
+
+ CSS Selector is faster to locating the element than xpath. It is string pattern. We cannot go back.
+ CSS stands for Cascading Style Sheets, it is another way to locate the element uniquely.
+
+ SYNTAX:
+ tagname[attribute = 'attribute value']
+ Example:
+ button[type='submit']
+
+ in CSS we cannot identify element by text
+
+ IMPORTANT: there is no specific condition when to go with xpath or CSS, this is just preference. In job we need to
+ see the common practice of the project what my team uses.
+
+SHORTCUTS for CSS: (Shortcuts are built-in features)
+shortcut for className: tagname.classNameValue    dot . stands for class name
+Example: input.nav-input
+
+Shortcut for ID: "#" -- ID: tagname#idValue
+Example: input#twotabsearchtextbox
+
+contains() method in CSS:
+* symbol represents contains() method -- tagname[attribute *= 'containing attribute value']
+
+starts-with method in CSS:
+^ symbol respresentas starts-with method
+Syntax:tagname[attribute^='starting attribute value']
+Example input[id^=btn]
+div[id^='divP']
+
+ends-with method in CSS:
+$ symbol represents ends-with methods
+
+Syntax: tagname[attribute$='ending attribute value']
+Example: div[id$='word']
+img[src $='syntax.png']
+
+
+WebElement Commands: Consists of several methods where we can perfrom actions and get element state on the web page.
+
+method/command
+isEnabled() == will return boolean value
+isEnabled () is used for verification
+isSelected () == will return boolean; is used for checkboxes
+isDisplayed () = will return boolean (ie logo etc)
+clear() -- will return void, does not return anything. CLEAR can be used only in textbox.
+clear() == It cannot be used for checkboxes
+getText() == will return String value; get text and to compare with expected value.
+getAttribute() = will return String, whenever we try use getAttribute we need to specify attribute itself
+                and not the value
+
+HOMEWORK:
+Task
+Open chrome browser
+Go to “http://18.232.148.34/humanresources/symfony/web/index.php/auth/login”
+Enter valid username and password (username - Admin, password - Hum@nhrm123)
+Click on login button
+Then verify Syntax Logo is displayed.
+
+TC 1: Amazon link count:
+Open chrome browser
+Go to “https://www.amazon.com/”
+Get all links
+Get number of links that has text
+Print to console only the links that has text
+
+HW 2
+HRMS Application Negative Login:
+Open chrome browser
+Go to “http://18.232.148.34/humanresources/symfony/web/index.php/auth/login”
+Enter valid username
+Leave password field empty
+Verify error message with text “Password cannot be empty” is displayed.
+

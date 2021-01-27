@@ -1,0 +1,61 @@
+
+What is a WebElement?
+
+WebElement is anything we see on the webpage is considered to be a webelement = buttons,
+dropdowns, textboxes, checkboxes
+Anything is present on the web page is weblement.
+
+HTML = stands for HyperTex Markup Language, create the layout for webpages
+CSS will give design, CSS we need to style
+
+What is DOM?
+DOM stands for Document Object Model. It is a browser's internal view of the webbpage.
+DOM is another way to call Develop's tool.
+DOCUMENT == can be stored any document, like pdf excel or word. In HTML we can store any document.
+OBJECT = any line inside HTML is called an Object
+MODEL = is a layout of HTML file.
+
+LOCATOR
+Locator is the address or the position of the specific webelement in the webpage or inside DOM or HTML.
+Locator is used to locate or identify a sedific element on the webpage.
+
+There are 8 Locators:
+
+1. id
+2. name
+3. className
+4. linkText
+5. partialLinkText
+6. xpath
+7. cssSelector
+8. tagName
+
+Why we need many locators?
+-- Not all developers provide all the locators we need for webelements.
+-- Some of locators can be dupicates or other notes. But we need only unique locator.
+-- Some locators may not be applicable to all the elements.
+        e.g. linkText adn PartialLInkText are only used applicable for link.
+
+HTML scripting meaning:
+First word in the line is tag
+purple  = tags
+orange or brown = attributes
+blue = that comes after equal sign or in double quoates = attribute values
+simple or regular text in black = is linktext, display text
+
+What is "a" tag in html called an anchor tag.
+href = is a link
+
+ID is the most reliable locator. And in most cases is unique
+
+Always read in the console for errors.
+
+Text on the tab is our TITLE
+
+
+
+
+
+
+
+
